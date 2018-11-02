@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_user"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="احمد احمدی"
+                android:id="@+id/txt_info"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_edit"
+                android:textSize="14dp"
+                android:text="ویرایش پروفایل"
+                android:textColor="#848484"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_child"
+                android:textSize="14dp"
+                android:text="ویرایش فرزندان"
+                android:textColor="#848484"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_player"
+                android:textSize="14dp"
+                android:text="ویرایش بازیکنان"
+                android:textColor="#848484"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_ticket"
+                android:textSize="14dp"
+                android:text="مشاهده بلیط"
+                android:textColor="#848484"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_shop"
+                android:textSize="14dp"
+                android:text="مشاهده خریدها"
+                android:textColor="#848484"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:id="@+id/btn_about"
+                android:text="درباره ما"
+                android:textColor="#848484"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/btn_support"
+                android:text="پشتیبانی"
+                android:textSize="14dp"
+                android:textColor="#848484"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

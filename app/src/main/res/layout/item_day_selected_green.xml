@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/select_day_green"
+    android:scaleType="fitXY">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="38dp"
+                android:text="01"
+                android:textColor="#a8d056"
+                android:textSize="25dp"
+                android:id="@+id/stringDay"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="91dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:text="روز پنج شنبه"
+                android:id="@+id/dayWeek"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="109dp"
+                android:layout_marginTop="3dp"
+                android:text="97/5/18"
+                android:id="@+id/dateTime"
+                android:textSize="16dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/placeName"
+                android:text="سالن شهید کشوری"
+                android:textColor="#696969"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/placeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="واقع در خیابان میرداماد"
+                android:textSize="15dp"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

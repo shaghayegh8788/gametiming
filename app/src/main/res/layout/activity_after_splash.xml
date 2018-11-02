@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a4a4a4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        tools:context=".AfterActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logo"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="Are you ready for an emotional day"
+                android:textColor="#fff" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="به اپلیکیشن وقت بازی خوش آمدین"
+                android:textColor="#606060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dote"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:lines="4"
+                android:layout_marginTop="20dp"
+                android:text="قبل از هر چیز اینو بگم که از اینکه مجموعه ما رو
+ انتخاب کردین و به ما اعتماد دارین بسیار خوشحالیم
+شما برای ما بسیار ارزشمند هستین و تمام سعیمون
+رو میکنیم تا بتونیم تا انتهای کار با شما همراه باشیم"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dote"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:lines="9"
+                android:layout_marginTop="20dp"
+                android:text="شما میتونید در این اپلیکیشن بلیط مسابقات تفریحی
+ما رو رزرو کنید ، از اخبار برنامه ها و جشن های ما
+مطلع بشین ، گالری عکس های مسابقات رو ببینید و
+ازاتفاق های باحالی که تو مجموعه ما اتفاق میوفته با
+خبر بشین . البته اینکه ما روز به روز به امکانات این
+اپلیکیشن اضافه میکنیم و دوست داریم که شما هم
+ما رو تو این کار یاری کنید و ما رو از نظرات خودتون
+   مطلع کنید . به امید دیدار شما
+"
+                android:textAlignment="center"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="20dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                   android:gravity="right"
+                    android:id="@+id/skip"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right|bottom"
+                    android:textColor="#fff"
+                    android:text="|  Skip"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

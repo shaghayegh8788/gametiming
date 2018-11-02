@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#f6f7f8"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:id="@+id/stepA"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Suspicious0dp">
+                    <ImageView
+                        android:id="@+id/step_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/step_a" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="7dp"
+                            android:gravity="left"
+                            android:text="Ticket reservation"
+                            android:textSize="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="47dp"
+                            android:layout_marginTop="-3dp"
+                            android:text="رزرو بلیط مسابقات"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="left"
+                            android:lineSpacingMultiplier="1.1"
+                            android:lines="1"
+
+                            android:text="Lorem Ipsum has been the industry's standard dummy text ever since the "
+                            android:textSize="7dp"
+
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/stepB"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/step_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@drawable/step_b"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Photo Gallery"
+                            android:textSize="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="-3dp"
+                            android:text="گالری عکس"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="right"
+                            android:lineSpacingMultiplier="1.1"
+                            android:lines="1"
+
+                            android:text="Lorem Ipsum has been the industry's standard dummy text ever since the "
+                            android:textSize="7dp"
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/stepC"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/step_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@drawable/step_c"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="7dp"
+                            android:gravity="left"
+                            android:text="Follow the order"
+                            android:textSize="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="68dp"
+                            android:layout_marginTop="-3dp"
+                            android:text="پیگیری سفارش"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="left"
+                            android:lineSpacingMultiplier="1.1"
+                            android:lines="1"
+
+                            android:text="Lorem Ipsum has been the industry's standard dummy text ever since the "
+                            android:textSize="7dp"
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/stepD"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/step_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@drawable/step_d"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Celebration news"
+                            android:textSize="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="-3dp"
+                            android:text="اخبار جشن ها"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="right"
+                            android:layout_marginLeft="5dp"
+                            android:lineSpacingMultiplier="1.1"
+                            android:lines="1"
+                            android:text="Lorem Ipsum has been the industry's standard dummy text ever since the "
+                            android:textSize="7dp"
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    android:id="@+id/bottom"></LinearLayout>-->
+</LinearLayout>

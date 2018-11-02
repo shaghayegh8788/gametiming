@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a3a3a3"
+        android:orientation="vertical">
+
+  <include layout="@layout/header_game"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:lines="2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="لطفا مشخصات فرزند خود را وارد نمایید ( رده سنی قابل قبول 3 تا 12 سال است )"
+                android:textColor="#4b4b4b"
+                android:textDirection="rtl"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ir.game_timing.customViews.MyEditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:text="1"
+                    android:layout_marginRight="5dp"
+                    android:background="#848484"
+                    android:gravity="center"
+                    android:id="@+id/count_child"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_sign_up"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="right"
+                    android:paddingTop="8dp"
+                    android:text="تعداد فرزندان بین 3 تا 12 سال"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dote" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_children"
+                android:layout_width="match_parent"
+                android:clipToPadding="false"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

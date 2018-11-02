@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerChild.ChildActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_child"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/img_upload"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/avatar"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_img_upload"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/ic_rounded_add_button" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="7dp"
+                android:layerType="software"
+                android:id="@+id/dote1"
+                android:background="@drawable/dote" />
+
+            <EditText
+                android:id="@+id/register_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint=" نام و نام خانوادگی "
+                android:padding="15dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_national_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint=" کد ملی"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#848484"
+                    android:text="انتخاب از تقویم"
+                    android:id="@+id/btn_calender"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:paddingLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تاریخ  تولد "
+                    android:id="@+id/txt_date"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/gender">
+                    <RadioButton
+                        android:id="@+id/radio_femail"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#4b4b4b"
+                        android:layout_marginLeft="0dp"
+
+                        android:buttonTint="#4b4b4b"
+                        android:backgroundTint="#000"
+                        android:text="دختر" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mail"
+                        android:layout_width="0dp"
+                        android:textColor="#4b4b4b"
+                        android:buttonTint="#4b4b4b"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="پسر" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="جنسیت"
+                        android:backgroundTint="#000"
+                        android:gravity="right"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layerType="software"
+                android:id="@+id/dote2"
+                android:background="@drawable/dote" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#4b4b4b"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="ثبت اطلاعات"
+                android:id="@+id/btn_register_children"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_child2"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/img_upload2"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/avatar"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_img_upload2"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/ic_rounded_add_button" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="7dp"
+                android:layerType="software"
+                android:id="@+id/dote12"
+                android:background="@drawable/dote" />
+
+            <EditText
+                android:id="@+id/register_full_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint=" نام و نام خانوادگی "
+                android:padding="15dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_national_code2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint=" کد ملی"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#848484"
+                    android:text="انتخاب از تقویم"
+                    android:id="@+id/btn_calender2"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:paddingLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تاریخ  تولد "
+                    android:id="@+id/txt_date2"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/gender2">
+                    <RadioButton
+                        android:id="@+id/radio_femail2"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#4b4b4b"
+                        android:layout_marginLeft="0dp"
+
+                        android:buttonTint="#4b4b4b"
+                        android:backgroundTint="#000"
+                        android:text="دختر" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mail2"
+                        android:layout_width="0dp"
+                        android:textColor="#4b4b4b"
+                        android:buttonTint="#4b4b4b"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="پسر" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="جنسیت"
+                        android:backgroundTint="#000"
+                        android:gravity="right"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layerType="software"
+                android:id="@+id/dote22"
+                android:background="@drawable/dote" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#4b4b4b"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="ثبت اطلاعات"
+                android:id="@+id/btn_register_children2"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

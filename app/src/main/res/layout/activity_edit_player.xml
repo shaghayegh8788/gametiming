@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".EditPlayerActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_child"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint=" نام و نام خانوادگی "
+                android:padding="15dp"
+                android:textColorHint="#fff"
+                android:inputType="text"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#848484"
+                android:gravity="right"
+                android:hint="سن کودک"
+                android:padding="15dp"
+                android:inputType="number"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/genderPlayer">
+                    <RadioButton
+                        android:id="@+id/radio_femailP"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#4b4b4b"
+                        android:layout_marginLeft="0dp"
+
+                        android:buttonTint="#4b4b4b"
+                        android:backgroundTint="#000"
+                        android:text="دختر" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mailP"
+                        android:layout_width="0dp"
+                        android:textColor="#4b4b4b"
+                        android:buttonTint="#4b4b4b"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="پسر" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="جنسیت"
+                        android:backgroundTint="#000"
+                        android:gravity="right"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#4b4b4b"
+                android:text="بازگشت"
+                android:layout_margin="8dp"
+                android:id="@+id/btn_back"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#4b4b4b"
+                android:text="ثبت ویرایش"
+                android:lines="1"
+                android:layout_margin="8dp"
+                android:id="@+id/btn_register"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:layerType="software"
+            android:id="@+id/dote2"
+            android:background="@drawable/dote" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#646464"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

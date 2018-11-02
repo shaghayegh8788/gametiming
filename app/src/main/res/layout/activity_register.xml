@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3"
+    tools:context=".RegisterActivity">
+
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_main"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3"
+
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_game"/>
+
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/txt_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:lines="2"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:text="لطفا در این بخش مشخصات ثبت نام کننده به عنوان مثال پدر یا مادر یا بستگان را وارد نمایید"
+                    android:textColor="#4b4b4b"
+                    android:textDirection="rtl"
+                    android:textSize="12sp" />
+
+                <ir.game_timing.customViews.MyEditText
+                    android:id="@+id/register_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#848484"
+                    android:gravity="right"
+                    android:hint=" نام "
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ir.game_timing.customViews.MyEditText
+                    android:id="@+id/register_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#848484"
+                    android:gravity="right"
+                    android:hint=" نام خانوادگی "
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <ir.game_timing.customViews.MyEditText
+                    android:id="@+id/register_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#848484"
+                    android:gravity="right"
+                    android:hint=" شماره موبایل "
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btn_sendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#4b4b4b"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="دریافت کد فعال سازی"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ir.game_timing.customViews.MyEditText
+                        android:id="@+id/register_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#848484"
+                        android:gravity="right"
+                        android:hint=" کد فعال سازی"
+                        android:inputType="number"
+                        android:padding="15dp"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:text="فعال سازی ثبت نام"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#4b4b4b"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/dote"
+                        android:layerType="software" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="چنانچه قبلا ثبت نام نموده اید لطفا از این بخش وارد شوید"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Login"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#ffa800"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+</RelativeLayout>

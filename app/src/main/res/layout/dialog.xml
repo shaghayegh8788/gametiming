@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:background="#848484">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="#ccc"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="در این بخش شما اطلاعات فرزند خود یا کودکی که میخواهید با خود برای بازی به همراه بیاورید را وارد می نمایید."
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="در بخش تعداد نفرات ثبت نامی که در عکس زیر میبینید تعداد فرزندان یا کودکانی که میخواهید با خود به بازی بیاورید را وارد مینمایید تا به تعداد وارد شده برای شما فرم ثبت نام برای بازی ساخته شود سپس فرم را برای هر کودک جدا پر مینمایید."
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/players"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="در حالت پیش فرض همان طور که مشاهده مینمایید مقدار یک است که یک فرم ثبت کودک بر روی صفحه موجود است اگر تعداد کودکان همراه  شما بیشتر از یک نفر است ابتدا تعداد را وارد نمایید بعد فرم ها را پر نمایید."
+                android:textSize="12sp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/gotIt"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="متوجه شدم"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:background="#858585"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:layout_marginBottom="40dp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp"
+    android:background="#848484"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="#ccc"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:text="موضوع"
+                    android:id="@+id/topicMessage"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/textMessage"
+                    android:paddingBottom="30dp"
+                    android:text="متن پیام"
+                    android:lines="6"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:id="@+id/back"
+                        android:layout_margin="15dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="بازگشت"
+                        android:textColor="#fff"
+                        android:textSize="13sp"
+                        android:background="#858585"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:layout_marginBottom="40dp"
+
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/noView"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="عدم نمایش دوباره"
+                        android:textColor="#fff"
+                        android:textSize="13sp"
+                        android:background="#858585"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:layout_marginBottom="40dp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

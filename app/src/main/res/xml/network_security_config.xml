@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+<!--    <domain-config>
+        <domain includeSubdomains="true">http://gametiming.sarbsar.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/trusted_roots"
+                tools:ignore="NetworkSecurityConfig" />
+        </trust-anchors>
+    </domain-config>-->
+</network-security-config>

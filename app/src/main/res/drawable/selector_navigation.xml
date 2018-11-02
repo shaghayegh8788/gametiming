@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:color="#fdc532" android:state_checked="true" />
+    <item android:color="#5a5959" android:state_checked="false"/>-->
+ <!--   <item android:color="#fdc532" android:state_checked="true" />-->
+   <!-- <item android:color="#fdc532" android:state_checked="true" />
+    <item android:color="#5a5959" />-->
+
+    <item android:color="#fdc532" android:state_checked="true" />
+    <item android:color="#5a5959" />
+
+</selector>
+
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:color="#fdc532" android:state_checked="true"/>
+<item android:color="#5a5959"/>
+</selector>-->

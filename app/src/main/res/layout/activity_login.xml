@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/header_game"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:lines="2"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:text="لطفا در این بخش شماره همراه ثبت شده در زمان ثبت نام را وارد نمایید"
+                    android:textColor="#4b4b4b"
+                    android:textDirection="rtl"
+                    android:textSize="14sp" />
+
+
+                <ir.game_timing.customViews.MyEditText
+                    android:id="@+id/login_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                 android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#848484"
+                    android:gravity="right"
+                    android:hint=" شماره موبایل "
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/visible"
+    android:orientation="vertical">
+
+    <ir.game_timing.customViews.MyEditText
+        android:id="@+id/login_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#848484"
+        android:gravity="right"
+        android:hint="کد چهار رقمی"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#4b4b4b"
+         android:layout_margin="10dp"
+            android:text="ارسال دوباره"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="70dp">
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#4b4b4b"
+        android:text="ارسال کد"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#4b4b4b"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="ورود"
+                    android:clickable="true"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/dote"
+                        android:layerType="software" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="چنانچه قبلا ثبت نام نکرده اید لطفا از این بخش وارد شوید"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Sign up"
+                        android:textColor="#ffa800"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

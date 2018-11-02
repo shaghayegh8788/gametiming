@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolbarActivity"
+    android:id="@+id/drawer2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+
+           <!-- <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/colorPrimary"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/setting"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/appName"
+                    android:text="@string/app_name"
+                    android:textSize="30sp"
+                    android:layout_centerInParent="true"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_number_one_in_a_circle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/burger_menu"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_if_instagram_photo_share_social_media_1169160"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

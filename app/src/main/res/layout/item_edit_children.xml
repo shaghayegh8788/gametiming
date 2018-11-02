@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/img_upload_edit_"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+
+                android:adjustViewBounds="true"
+                android:background="@drawable/avatar"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/btn_img_upload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/ic_rounded_add_button" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/dote1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/dote"
+            android:layerType="software" />
+
+        <ir.game_timing.customViews.MyEditText
+            android:id="@+id/register_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#848484"
+            android:gravity="right"
+            android:hint=" نام "
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="16sp" />
+
+        <ir.game_timing.customViews.MyEditText
+            android:id="@+id/register_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#848484"
+            android:gravity="right"
+            android:hint=" نام  خانوادگی  "
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="16sp" />
+
+
+        <ir.game_timing.customViews.MyEditText
+            android:id="@+id/register_national_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#848484"
+            android:gravity="right"
+            android:hint=" کد ملی"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_calender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#848484"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:paddingLeft="20dp"
+                android:text="انتخاب از تقویم"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="تاریخ  تولد "
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_femail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000"
+
+                    android:buttonTint="#4b4b4b"
+                    android:text="دختر"
+                    android:textColor="#4b4b4b" />
+
+                <RadioButton
+                    android:id="@+id/radio_mail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:buttonTint="#4b4b4b"
+                    android:text="پسر"
+                    android:textColor="#4b4b4b" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000"
+                    android:gravity="right"
+                    android:text="جنسیت"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/relation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_un_relation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000"
+
+                    android:buttonTint="#4b4b4b"
+                    android:text="سایر"
+                    android:textColor="#4b4b4b" />
+
+                <RadioButton
+                    android:id="@+id/radio_relation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:buttonTint="#4b4b4b"
+                    android:text="والدین"
+                    android:textColor="#4b4b4b" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000"
+                    android:gravity="right"
+                    android:text="نسبت شما"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_edit_back"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#4b4b4b"
+        android:paddingLeft="50dp"
+        android:lines="1"
+        android:paddingRight="50dp"
+        android:text="بازگشت"
+        android:textColor="#fff"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/btn_edit_children"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#4b4b4b"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="ثبت تغییرات"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+
+        <View
+            android:id="@+id/dote2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dote"
+            android:layerType="software" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#646464" />
+
+    </LinearLayout>
+
+
+</ScrollView>
